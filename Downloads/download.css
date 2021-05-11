@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    font-size: larger;
+    background-color:black;
+    color:white;
+}
+h1{
+    color: red;
+}
+
+
+#image{
+    width: 50%;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+
+}
+div{
+
+    margin-left: 6em;
+margin-right: 6em;
+
+}
+.download
+{
+    width:20%;
+}
+
+
+#foot
+{
+    margin-left:auto;
+    margin-right:auto;
+   background-color: rgb(255, 255, 255);
+   padding-top: 0.3em;
+   padding-bottom: 0.3em;
+   color: red;
+}

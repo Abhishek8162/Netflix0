@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script>   
+        
+    function next() {
+        d=document.getElementById('inp').value; 
+        d=d.toLowerCase();
+        if(d=='harry potter')
+        d='hp';
+        else if(d=='dragon ball z')
+        d='dbz';
+        else if(d=='death note')
+        d='dn';
+        else if(d=='one punch man')
+        d='opm';
+        else if(d=='avengers'||d=='avengers infinity war')
+        d='inf';
+else
+d='../error';
+
+
+
+
+        window.location = 'downloads/' + d +'.html';
+        return false;
+        
+    }
+        </script>
+    
+
+
+
+<style>
+    body {
+        color:white;
+    }
+
+
+ input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+   border: 1px solid #ccc; 
+}
+
+button
+{border: 1px solid #ccc; 
+   
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px; 
+}
+
+
+
+</style>
+
+
+    
+</head>
+<body >
+    <h1>NETFLIX</h1>
+    <div></div>
+    <input type="text" id ="inp" placeholder="Search..">
+   <button  onClick="next()" id ="btn">Search</button>
+
+
+
+    
+</body>
+</html>
