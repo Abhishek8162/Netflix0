@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script >
+        var pc=0;
+        var size =3;
+  
+
+
+imgs = [
+  "../src/Death-Note.jpg",
+  "../src/endgame.jpg",
+  "../src/infinity.jpg",
+  "../src/dbz.jpg"
+];
+
+titles=
+["1. Death Note",
+"2. Avengers Endgame",
+"3. Avengers Infinity War",
+"4. Dragon Ball Z"
+
+];
+
+
+links = [
+  "../src/Death-Note.jpg",
+  "../src/endgame.jpg",
+  "../src/infinity.jpg",
+  "../src/dbz.jpg"
+];
+
+
+
+        function prev()
+        {
+            pc--;
+           if(pc<-3)
+           pc=0;
+           
+            document.getElementById("contentimg").src=imgs[(size+pc+1)%4];
+            document.getElementById("titles").innerHTML=titles[(size+pc+1)%4];
+           
+        
+        
+        } 
+
+        function next()
+        {
+            pc++;
+            document.getElementById("contentimg").src=imgs[pc%4];
+            document.getElementById("titles").innerHTML=titles[pc%4];
+
+        }
+
+        function download()
+        {
+         //   window.location.href = "error.html";
+
+         
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <h1>NETFLIX</h1> 
+    <div class="content1">
+        <img id="contentimg" onclick="download()" src="../src/Death-Note.jpg" alt="No image found">
+       <p id ="titles"> 1. Death Note</p>    
+    </div>
+
+    <div id ="cur">
+        <p onclick="prev()" id ="pr"> Prev</p>
+     <p onclick="next()" id ="nx"> Next</p>
+     
+    </div> 
+
+
+</body>
+</html>
